@@ -1,0 +1,11 @@
+function salvarFicha() {
+    const form = document.getElementById('fichaForm');
+    const data = new FormData(form);
+
+    const ficha = {};
+    data.forEach((value, key) => {
+        ficha[key] = value;
+    });
+
+    console.log('Ficha Salva:', ficha);
+    alert('Ficha salva com sucesso!');
